@@ -1,0 +1,35 @@
+package garali_eya;
+
+public abstract class Abonne {
+	protected int num;
+	protected float solde;
+	protected String nom;
+	
+	public Abonne(int num,float solde,String nom){
+		this.num = num;
+		this.solde = solde;
+		this.nom = nom;
+	}
+	
+	public abstract String getOperateur();
+
+	public float getSolde() {
+		return this.solde;
+	}
+
+	public String getNom() {
+		return this.nom;
+	}
+
+	public void rechargeSolde(double m) {
+		solde+=m;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

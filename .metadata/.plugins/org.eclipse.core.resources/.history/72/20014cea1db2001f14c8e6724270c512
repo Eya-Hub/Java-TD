@@ -1,0 +1,44 @@
+package garali_eya;
+
+public class Amis {
+	private Abonne liste[];
+	private int nbAbonne;
+	private int MAX;
+	
+	public Amis(int nbAbonne,Abonne liste[],int MAX) {
+		this.MAX = MAX;
+		liste = new Abonne[MAX];
+		this.nbAbonne = 0;
+	}
+	
+	public void identifierTous() {
+		System.out.println("Liste d'abonnee");
+		for(int i = 0;i<nbAbonne;i++) {
+			System.out.println(liste[i].getNom());
+		}
+	}
+	
+	public void rechargerTous(double m) {
+		for(int i = 0;i<nbAbonne;i++) {
+			liste[i].solde+=m;
+		}
+	}
+	
+	public void rejoindreAmis(Abonne a) {
+		if(nbAbonne<MAX) {
+			liste[nbAbonne] = a;
+			nbAbonne++;
+		}
+		else
+			System.out.println("Espace insuffisante !");
+	}
+	
+	//les methodes d'exceptions
+	
+	
+	public static void main(String args[]) {
+		Abonne a1 = new Abonne()
+	}
+	
+	
+}

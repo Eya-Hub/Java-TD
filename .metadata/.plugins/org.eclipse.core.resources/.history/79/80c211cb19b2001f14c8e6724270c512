@@ -1,0 +1,14 @@
+package garali_eya;
+
+public class AbonneOoredoo extends Abonne{
+	public AbonneOoredoo(int num,float solde,String nom) {
+		super(num,solde,nom);
+	}
+	
+	public String getOperateur() {
+		if(num/100000000==2)
+			return "Ooredoo";
+		else 
+			return "Inconnu";
+	}
+}

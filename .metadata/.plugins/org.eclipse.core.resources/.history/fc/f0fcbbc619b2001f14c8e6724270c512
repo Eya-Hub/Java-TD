@@ -1,0 +1,14 @@
+package garali_eya;
+
+public class AbonneOrange extends Abonne{
+	public AbonneOrange(int num,float solde,String nom) {
+		super(num,solde,nom);
+	}
+	
+	public String getOperateur() {
+		if(num/100000000==5)
+			return "Orange";
+		else 
+			return "Inconnu";
+	}
+}

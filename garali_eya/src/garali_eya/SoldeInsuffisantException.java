@@ -1,0 +1,17 @@
+package garali_eya;
+
+public class SoldeInsuffisantException extends Exception {
+	private int choix;
+	public SoldeInsuffisantException(int choix) {
+		this.choix=choix;
+	}
+	public String message(int coix){
+		if(choix==1)
+			return"Solde insuffisant pour passer cet appel ! Veuillez recharger vos soldes";
+		if(choix==2)
+			return"Solde insuffisant pour envoyer le message ! Veuillez recharger vos soldes";
+		else 
+			return"Error";
+	}
+}
+

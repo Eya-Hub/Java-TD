@@ -1,0 +1,23 @@
+package garali_eya;
+
+public class Amis {
+	private Abonne liste[];
+	private int nbAbonne;
+	
+	public Amis(int nbAbonne,Abonne liste[],int MAX) {
+		liste = new Abonne[MAX];
+		this.nbAbonne = 0;
+	}
+	
+	public void identifierTous() {
+		for(int i = 0;i<nbAbonne;i++) {
+			System.out.println("Liste d'abonnee : "+liste[i].getNom()+", ");
+		}
+	}
+	
+	public void rechargerTous(double m) {
+		for(int i = 0;i<nbAbonne;i++) {
+			liste[i].solde+=m;
+		}
+	}
+}

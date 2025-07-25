@@ -1,0 +1,42 @@
+package ex3;
+import java.util.Scanner; 
+
+public class Date {
+	private int jour,mois,annee;
+	public Date()throws JourException,MoisException {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Saisir un jour :");
+		this.jour = sc.nextInt() ;
+		if(this.jour<1 || this.jour>31) 
+			throw new JourException("Le jour doit être compris entre 1 et 31.");
+		
+		System.out.println("Saisir un mois :");
+		this.mois = sc.nextInt() ;
+		if(this.mois<1 || this.mois>12) 
+			throw new MoisException("Le mois doit être compris entre 1 et 12.");
+		
+		System.out.println("Saisir une annee :");
+		this.annee = sc.nextInt();
+	}
+	
+	public void afficherDate() {
+        System.out.println("Date : " + jour + "/" + mois + "/" + annee);
+    }
+	
+	public static void main(String[] args) {
+		try {
+			Date d = new Date();
+			d.afficherDate();
+		}
+		catch(JourException e){
+			System.out.println("Erreur de saisie : "+e.getMessage());
+		}
+		catch(MoisException e){
+			System.out.println("Erreur de saisie : "+e.getMessage());
+		}
+		
+		
+		
+		
+	} 
+}

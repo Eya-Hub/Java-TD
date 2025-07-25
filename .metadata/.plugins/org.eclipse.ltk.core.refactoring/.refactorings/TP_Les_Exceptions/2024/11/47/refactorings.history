@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;ex2.Factorielle_Exception.java&apos; to &apos;Cas1_Exception.java&apos;&#x0D;&#x0A;- Original project: &apos;TP_Les_Exceptions&apos;&#x0D;&#x0A;- Original element: &apos;ex2.Factorielle_Exception.java&apos;&#x0D;&#x0A;- Renamed element: &apos;ex2.Cas1_Exception.java&apos;" description="Rename compilation unit &apos;Factorielle_Exception.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;ex2{Factorielle_Exception.java" name="Cas1_Exception.java" references="false" stamp="1732094409269" version="1.0"/>
+</session>

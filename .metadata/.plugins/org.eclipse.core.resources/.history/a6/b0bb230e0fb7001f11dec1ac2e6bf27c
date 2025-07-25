@@ -1,0 +1,21 @@
+package ex3;
+import java.util.Scanner; 
+
+public class Date {
+	private int jour,mois,annee;
+	public Date()throws JourException,MoisException {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Saisir un jour :");
+		this.jour = sc.nextInt() ;
+		if(jour<1 || jour>31) {
+			throw new JourException("Le jour doit être compris entre 1 et 31.");
+		}
+		
+		this.mois = sc.nextInt();
+		
+		this.annee = sc.nextInt();
+		
+	}
+	
+	//main 
+}

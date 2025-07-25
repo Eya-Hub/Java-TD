@@ -1,0 +1,58 @@
+package garali_eya;
+
+public class Amis {
+	private Abonne liste[];
+	private int nbAbonne;
+	private int MAX;
+	
+	public Amis(int MAX) {
+		this.MAX = MAX;
+		liste = new Abonne[MAX];
+		this.nbAbonne = 0;
+	}
+	
+	public void identifierTous() {
+		System.out.println("Liste d'abonnee");
+		for(int i = 0;i<nbAbonne;i++) {
+			System.out.println(liste[i].getNom());
+		}
+	}
+	
+	public void rechargerTous(double m) {
+		for(int i = 0;i<nbAbonne;i++) {
+			liste[i].solde+=m;
+		}
+	}
+	
+	public void rejoindreAmis(Abonne a) {
+		if(nbAbonne<MAX) {
+			liste[nbAbonne] = a;
+			nbAbonne++;
+		}
+		else
+			System.out.println("Espace insuffisante !");
+	}
+	
+	//les methodes d'exceptions
+	
+	
+	public static void main(String args[]) {
+		AbonneOrange a1 = new AbonneOrange(55111222,45,"Sami");
+		AbonneOoredoo a2 = new AbonneOoredoo(22111333,60,"Mohamed");
+		AbonneOrange a3 = new AbonneOrange(55333222,710,"Riadh");
+		
+		Amis clients = new Amis(5);
+		clients.rejoindreAmis(a1);
+		clients.rejoindreAmis(a2);
+		clients.rejoindreAmis(a3);
+		
+		a2.evoyerSMS();
+		System.out.println("Nouveau solde = "+a2.getSolde());
+		
+		a3.appeler(a2, 0)
+		
+	}
+	
+	
+	
+}

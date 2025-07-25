@@ -1,0 +1,7 @@
+package garali_eya;
+
+public interface interface_examen {
+	public boolean evoyerSMS();
+	public boolean appeler(Abonne contact,int duree);
+	
+}

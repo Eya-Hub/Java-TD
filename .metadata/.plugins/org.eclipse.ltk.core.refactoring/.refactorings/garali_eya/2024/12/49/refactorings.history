@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;garali_eya.interface_examen&apos; to &apos;Communication&apos;&#x0D;&#x0A;- Original project: &apos;garali_eya&apos;&#x0D;&#x0A;- Original element: &apos;garali_eya.interface_examen&apos;&#x0D;&#x0A;- Renamed element: &apos;garali_eya.Communication&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;interface_examen&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;garali_eya{interface_examen.java[interface_examen" matchStrategy="1" name="Communication" qualified="false" references="true" similarDeclarations="false" stamp="1733300171768" textual="false" version="1.0"/>
+</session>

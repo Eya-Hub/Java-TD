@@ -1,0 +1,23 @@
+package ex3;
+import java.util.Scanner; 
+
+public class Date {
+	private int jour,mois,annee;
+	public Date(int jour,int mois,int annee) {
+		if(jour<=0 || jour>31) {
+			throw JourException;
+		}
+		this.jour = jour;
+		this.mois = mois;
+		this.annee = annee;
+	}
+	public Date()
+	throws JourException, MoisException {
+		if(jour<1 || jour>31) 
+			throw new JourException();
+		
+		if(mois<1 || mois>12)
+			throw new MoisException();
+	}
+	//main 
+}
